@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FDEDEC;
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #FF6666;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.balloons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.balloon {
+    width: 50px;
+    height: 80px;
+    background-color: #FF6666;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+}
+
+.balloon::before {
+    content: '';
+    width: 2px;
+    height: 20px;
+    background-color: #333;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blessing {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+audio {
+    margin-top: 20px;
+}
